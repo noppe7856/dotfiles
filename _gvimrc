@@ -1,0 +1,84 @@
+"	今開いているファイルのディレクトリをエクスプローラで開く。
+"	http://takesy.cocolog-nifty.com/atico/2008/02/windowsgvim_bc99.html
+function ExplorerStart()
+	let s:dir = expand("%:p:h")
+	let s:directory=substitute(s:dir,"/","\\","g")
+	execute "!start explorer /e,".s:directory
+endfunction
+
+
+" 改行コードの自動認識
+set fileformats=dos,unix,mac
+set dir=C:\\vim\\tmp
+set gfn=MS_Gothic:h9:cSHIFTJIS
+set backup
+set backupdir=C:\\vim\\backupfile
+" Grep設定
+let $PATH=expand($PATH) . ';C:\Program Files\GnuWin32\bin'
+set grepprg=grep.exe\ -nH
+" Shell設定
+if has("gui_win32")
+	set shell=C:\WINDOWS\system32\cmd.exe
+endif
+" tags設定
+set tags=./tags,tags,C:\\cygwin\\home\\y_nakano\\SDCreator09Af_20090317\\tags
+"	色テーマ
+colorscheme desert
+"	windowsクリップボード使用
+set clipboard=unnamed
+"	Vimで文字を選択したらだけで、クリップボードにコピーする
+set guioptions+=a
+"	IMEをOFFにする
+set iminsert=0
+set imsearch=0
+" タブページのラベルを常に表示する(2)
+set showtabline=2 
+set mouse="h"
+"ヘルプ検索の日本語の優先順位を上げる
+set helplang=ja,en
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 挿入
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" クリップボードからコピー
+map <A-v>	<S-Insert>
+map! <A-v>	<S-Insert>
+
+" :(コロン）+Ctrol+oで現在開いているファイルのディレクトリをエクスプローラで開く
+cm <C-o> call ExplorerStart()<CR>
+
+nnoremap <C-Tab> :tabnext<Return> 
+nnoremap <C-S-Tab> :tabprevious<Return>
+
+
+" VimToEver
+let g:winVimToEverNote = 'from vim'
+let g:winVimToEverAttachment = 1
+let g:winVimToEverPath = "C:\Program Files\Evernote\Evernote\ENScript.exe"
+
+nmap ,n :call WinVimToEver()<CR>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" 新しくファイルをVimで開いたときにすでに起動しているVimのウィンドウの中のタブで開くようにする
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"
+"新しいファイルをVimで開く度に新しいウィンドウで立ち上がるのを防ぎ、すでに起動しているVimのウィンドウの中のタブで開くように設定します。
+"
+"起動時に--remote-tab-silentというオプションをつけると、ファイルを新しいタブで開くことができます。
+"以下の手順でWindowsのレジストリを修正して常にこのオプションをつけてVimを実行するように設定します。
+"
+"1.レジストリエディタを起動
+"スタート → ファイル名を指定して実行 → 「regedit」と入力して「OK」をクリック
+"以上の手順でレジストリエディタが起動します。
+"なお、「ファイル名を指定して実行」は「Winsowsキー + R」のショートカットでも起動できます。
+"
+"2.編集の実行
+"レジストリエディタが起動したら /HKEY_CLASSES_ROOT/Applications/gvim.exe/shell/edit/command というようにツリーを辿っていき、値を「$VIM\gvim.exe -p --remote-tab-silent "%1"」に変更します。
+"$VIMの箇所にはVimのルートディレクトリを指定します。
+"ルートディレクトリはVimを起動後、:echo $VIMを実行すると確認できます。
+"例えば、:echo $VIM 実行後に表示された値が「C:\Program Files\Vim」ならば、/HKEY_CLASSES_ROOT/Applications/gvim.exe/shell/edit/command の値には「C:\Program Files\Vim\gvim.exe -p --remote-tab-silent "%1"」と指定します。
+"以上でレジストリの編集は終了です。
+"
+"レジストリの編集が完了したら、Vimを再起動して新しいファイルが起動中のVimのウィンドウ内のタブで開かれるか確認します。 
+
+
