@@ -5,51 +5,51 @@ filetype plugin on
 ""
 ""	set 
 ""
-set	cin							" C¹½Ê¸¤òÇ§¼±¤¹¤ë¥¤¥ó¥Ç¥ó¥È 		
+set	cin							" C\•¶‚ğ”F¯‚·‚éƒCƒ“ƒfƒ“ƒg 		
 set ai
 set backspace=indent,eol,start	" allow backspacing over everything in insert mode
 set cinkeys="0{,0},0),:,0#,!^F,o,O,e"
-set history=50					" ÍúÎò¤Ë²¿¸Ä¤Î¹àÌÜ¤¬ÊİÂ¸¤µ¤ì¤ë¤«¤ò»ØÄê
+set history=50					" —š—ğ‚É‰½ŒÂ‚Ì€–Ú‚ª•Û‘¶‚³‚ê‚é‚©‚ğw’è
 set hlsearch
 set incsearch					" do incremental searching
 set nocompatible
-set nowrap						" ¹Ô¤ÎÀŞ¤êÊÖ¤·¤ò¹Ô¤ï¤Ê¤¤
-set number						" ¹ÔÈÖ¹æ¤òÀßÄê
-set ruler						" ¥«¡¼¥½¥ë¤¬²¿¹ÔÌÜ¤Î²¿ÎóÌÜ¤ËÃÖ¤«¤ì¤Æ¤¤¤ë¤«¤òÉ½¼¨
-set shiftwidth=4				" ¥¤¥ó¥Ç¥ó¥È¤Î³ÆÃÊ³¬¤Ë»È¤ï¤ì¤ë¶õÇò¤Î¿ô
-set showcmd						" ¥³¥Ş¥ó¥É (¤Î°ìÉô) ¤ò²èÌÌ¤ÎºÇ²¼¹Ô¤ËÉ½¼¨¤¹¤ë
-set tabstop=4					" ¥Õ¥¡¥¤¥ëÆâ¤Î <Tab> ¤¬ÂĞ±ş¤¹¤ë¶õÇò¤Î¿ô
-set nocp						" vi¤ÈÈó¸ß´¹¤Ë¤¹¤ë¡£
+set nowrap						" s‚ÌÜ‚è•Ô‚µ‚ğs‚í‚È‚¢
+set number						" s”Ô†‚ğİ’è
+set ruler						" ƒJ[ƒ\ƒ‹‚ª‰½s–Ú‚Ì‰½—ñ–Ú‚É’u‚©‚ê‚Ä‚¢‚é‚©‚ğ•\¦
+set shiftwidth=4				" ƒCƒ“ƒfƒ“ƒg‚ÌŠe’iŠK‚Ég‚í‚ê‚é‹ó”’‚Ì”
+set showcmd						" ƒRƒ}ƒ“ƒh (‚Ìˆê•”) ‚ğ‰æ–Ê‚ÌÅ‰ºs‚É•\¦‚·‚é
+set tabstop=4					" ƒtƒ@ƒCƒ‹“à‚Ì <Tab> ‚ª‘Î‰‚·‚é‹ó”’‚Ì”
+set nocp						" vi‚Æ”ñŒİŠ·‚É‚·‚éB
 set visualbell
-set nf=""						" ¥¤¥ó¥¯¥ê¥á¥ó¥È¤È¥Ç¥¯¥ê¥á¥ó¥È¤Ç¾ï¤Ë10¿Ê¿ô¤È¤·¤Æ°·¤¦
+set nf=""						" ƒCƒ“ƒNƒŠƒƒ“ƒg‚ÆƒfƒNƒŠƒƒ“ƒg‚Åí‚É10i”‚Æ‚µ‚Äˆµ‚¤
 set autochdir
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	¥¹¥¯¥ê¥×¥È
+""	ƒXƒNƒŠƒvƒg
 ""
-:runtime ftplugin/man.vim		" :Man¤Çman
+:runtime ftplugin/man.vim		" :Man‚Åman
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	¥¹¥Æ¡¼¥¿¥¹¹Ô¤ÎÀßÄê
+""	ƒXƒe[ƒ^ƒXs‚Ìİ’è
 ""
-set laststatus=2				" ¥¹¥Æ¡¼¥¿¥¹¹Ô¤ò¾ï»şÉ½¼¨ 
+set laststatus=2				" ƒXƒe[ƒ^ƒXs‚ğí•\¦ 
 set statusline=%F%m%r%h%w\%=[FORMAT=%{&ff}]\[TYPE=%Y]\%{'[ENC='.(&fenc!=''?&fenc:&enc).']'}\[POS=%05l/%05L,%05v][%p%%]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	Align¤ÎÉı¹­ÂĞ±ş
+""	Align‚Ì•L‘Î‰
 ""
 let g:Align_xstrlen=3
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""  ¥«¥é¡¼É½¼¨ÍÑ¤ÎÀßÄê
+""  ƒJƒ‰[•\¦—p‚Ìİ’è
 ""
 colorscheme desert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	¥Ï¥¤¥é¥¤¥È»ØÄê
+""	ƒnƒCƒ‰ƒCƒgw’è
 ""
 hi	Comment ctermfg=LightCyan cterm=NONE
 hi	Search NONE
@@ -78,7 +78,7 @@ command! Big wincmd _ | wincmd |
 " for snippets
 ":let g:neosnippet#snippets_directory='$VIM/vimfiles/bundle/snipmate-snippets/snippets'
 
-" 2013/01/19 19:20ºÇ¿·¤ÎREADME¤Î¤â¤Î¤òÈ¿±Ç
+" 2013/01/19 19:20ÅV‚ÌREADME‚Ì‚à‚Ì‚ğ”½‰f
 " Plugin key-mappings.
 :let g:neocomplcache_enable_at_startup = 1
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
@@ -102,40 +102,42 @@ map <F6> :Gtags -f %<CR>
 map <F5> :Gtags
 
 
-" QuickFix¤òÊÑ¹¹²ÄÇ½¤Ë¤¹¤ë¡£
+" QuickFix‚ğ•ÏX‰Â”\‚É‚·‚éB
 autocmd BufWinEnter quickfix setlocal modifiable
 
 
-" ¥Õ¥¡¥¤¥ë·Á¼°¤Î¸¡½Ğ¤òÌµ¸ú¤Ë¤¹¤ë
+" ƒtƒ@ƒCƒ‹Œ`®‚ÌŒŸo‚ğ–³Œø‚É‚·‚é
 filetype off
 
-" Vundle ¤ò½é´ü²½¤·¤Æ
-" Vundle ¼«¿È¤â Vundle ¤Ç´ÉÍı
-set rtp+=~/vimfiles/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+" Vundle ‚ğ‰Šú‰»‚µ‚Ä
+" Vundle ©g‚à Vundle ‚ÅŠÇ—
+if executable('git')
+		set rtp+=~/vimfiles/vundle.git/
+		call vundle#rc()
+		Bundle 'gmarik/vundle'
 
-"" github ¤Ë¤¢¤ë¥×¥é¥°¥¤¥ó
-"Bundle 'Shougo/neocomplcache'
-"Bundle 'Shougo/neosnippet'
-"Bundle 'Shougo/vimshell'
-"Bundle 'Shougo/vimproc'
-"Bundle 'Shougo/unite.vim'
-"Bundle 'banyan/recognize_charcode.vim'
-"Bundle 'honza/snipmate-snippets'
-"
-"" vim-scripts ¥×¥é¥°¥¤¥ó
-"Bundle 'gtags.vim'
-"Bundle 'Align.vim'
-"Bundle 'a.vim'
-"Bundle 'taglist.vim'
-""Bundle 'templatefile.vim'
-"Bundle 'CmdlineCompl.vim'
+		"" github ‚É‚ ‚éƒvƒ‰ƒOƒCƒ“
+		"Bundle 'Shougo/neocomplcache'
+		"Bundle 'Shougo/neosnippet'
+		"Bundle 'Shougo/vimshell'
+		"Bundle 'Shougo/vimproc'
+		"Bundle 'Shougo/unite.vim'
+		Bundle 'banyan/recognize_charcode.vim'
+		"Bundle 'honza/snipmate-snippets'
+		"
+		"" vim-scripts ƒvƒ‰ƒOƒCƒ“
+		Bundle 'gtags.vim'
+		Bundle 'Align.vim'
+		Bundle 'a.vim'
+		Bundle 'taglist.vim'
+		""Bundle 'templatefile.vim'
+		Bundle 'CmdlineCompl.vim'
 
 
-" github ¤Ë¤Ê¤¤¥×¥é¥°¥¤¥ó
+		" github ‚É‚È‚¢ƒvƒ‰ƒOƒCƒ“
 
-" ¥Õ¥¡¥¤¥ë·Á¼°¸¡½Ğ¡¢¥×¥é¥°¥¤¥ó¡¢¥¤¥ó¥Ç¥ó¥È¤ò ON
+		" ƒtƒ@ƒCƒ‹Œ`®ŒŸoAƒvƒ‰ƒOƒCƒ“AƒCƒ“ƒfƒ“ƒg‚ğ ON
+endif
 filetype plugin indent on 
 
 "//________________________________EOF________________________________
