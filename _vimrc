@@ -111,7 +111,8 @@ filetype off
 
 " Vundle を初期化して
 " Vundle 自身も Vundle で管理
-if executable('git')
+if executable('git') 
+	if exists("*rc")
 		set rtp+=~/vimfiles/vundle.git/
 		call vundle#rc()
 		Bundle 'gmarik/vundle'
@@ -136,8 +137,9 @@ if executable('git')
 
 		" github にないプラグイン
 
-		" ファイル形式検出、プラグイン、インデントを ON
+	endif
 endif
+" ファイル形式検出、プラグイン、インデントを ON
 filetype plugin indent on 
 
 "//________________________________EOF________________________________
