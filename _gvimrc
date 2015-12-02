@@ -9,10 +9,10 @@ endfunction
 
 " 改行コードの自動認識
 set fileformats=dos,unix,mac
-set dir=C:\\vim\\tmp
 set gfn=MS_Gothic:h9:cSHIFTJIS
 set backup
-set backupdir=C:\\vim\\backupfile
+set backupdir=$TMP
+set dir=$TMP
 " Grep設定
 let $PATH=expand($PATH) . ';C:\Program Files\GnuWin32\bin'
 set grepprg=grep.exe\ -nH
