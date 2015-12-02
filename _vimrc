@@ -22,7 +22,7 @@ set tabstop=4					" ファイル内の <Tab> が対応する空白の数
 set nocp						" viと非互換にする。
 set visualbell
 set nf=""						" インクリメントとデクリメントで常に10進数として扱う
-set autochdir
+"set autochdir
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
 ""	スクリプト
@@ -101,6 +101,10 @@ map <F7> :Gtags -r <CR>
 map <F6> :Gtags -f %<CR>
 map <F5> :Gtags
 
+" windows
+map <F2> :r !date /t<CR>
+map <F3> :r !time /t<CR>
+"
 
 " QuickFixを変更可能にする。
 autocmd BufWinEnter quickfix setlocal modifiable
@@ -111,26 +115,26 @@ filetype off
 
 " Vundle を初期化して
 " Vundle 自身も Vundle で管理
-set rtp+=~/vimfiles/bundle/vundle/
+set rtp+=C:\vim\vimfiles\bundle\vundle
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
-"" github にあるプラグイン
-"Bundle 'Shougo/neocomplcache'
-"Bundle 'Shougo/neosnippet'
-"Bundle 'Shougo/vimshell'
-"Bundle 'Shougo/vimproc'
-"Bundle 'Shougo/unite.vim'
-"Bundle 'banyan/recognize_charcode.vim'
+" github にあるプラグイン
+Bundle 'Shougo/neocomplcache'
+Bundle 'Shougo/neosnippet'
+Bundle 'Shougo/vimshell'
+Bundle 'Shougo/vimproc'
+Bundle 'Shougo/unite.vim'
+Bundle 'banyan/recognize_charcode.vim'
 "Bundle 'honza/snipmate-snippets'
-"
-"" vim-scripts プラグイン
-"Bundle 'gtags.vim'
-"Bundle 'Align.vim'
-"Bundle 'a.vim'
-"Bundle 'taglist.vim'
-""Bundle 'templatefile.vim'
-"Bundle 'CmdlineCompl.vim'
+
+" vim-scripts プラグイン
+Bundle 'gtags.vim'
+Bundle 'Align.vim'
+Bundle 'a.vim'
+Bundle 'taglist.vim'
+"Bundle 'templatefile.vim'
+Bundle 'CmdlineCompl.vim'
 
 
 " github にないプラグイン

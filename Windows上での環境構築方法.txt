@@ -1,0 +1,10 @@
+cd C:\vim
+git clone https://github.com/noppe7856/dotfiles.git
+mklink /J dotfiles\vimfiles
+mklink /J vimfiles dotfiles\vimfiles
+mklink /H _vimrc dotfiles\_vimrc
+mklink /H _gvimrc dotfiles\_gvimrc
+
+
+----------------
+[送るにVimへのショートカット追加]
