@@ -16,6 +16,11 @@ cd ~/dotfile
 git submodule init  
 git submodule update  
 
+### Create Links
+ln -s dotfiles/vimfiles .  
+ln -s dotfiles/_gvimrc .gvimrc  
+ln -s dotfiles/_vimrc .vimrc  
+
 ## In vim 
 :BundleInstall
 
