@@ -5,51 +5,51 @@ filetype plugin on
 ""
 ""	set 
 ""
-set	cin							" C\•¶‚ğ”F¯‚·‚éƒCƒ“ƒfƒ“ƒg 		
+set	cin							" Cæ§‹æ–‡ã‚’èªè­˜ã™ã‚‹ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆ 		
 set ai
 set backspace=indent,eol,start	" allow backspacing over everything in insert mode
 set cinkeys="0{,0},0),:,0#,!^F,o,O,e"
-set history=50					" —š—ğ‚É‰½ŒÂ‚Ì€–Ú‚ª•Û‘¶‚³‚ê‚é‚©‚ğw’è
+set history=50					" å±¥æ­´ã«ä½•å€‹ã®é …ç›®ãŒä¿å­˜ã•ã‚Œã‚‹ã‹ã‚’æŒ‡å®š
 set hlsearch
 set incsearch					" do incremental searching
 set nocompatible
-set nowrap						" s‚ÌÜ‚è•Ô‚µ‚ğs‚í‚È‚¢
-set number						" s”Ô†‚ğİ’è
-set ruler						" ƒJ[ƒ\ƒ‹‚ª‰½s–Ú‚Ì‰½—ñ–Ú‚É’u‚©‚ê‚Ä‚¢‚é‚©‚ğ•\¦
-set shiftwidth=4				" ƒCƒ“ƒfƒ“ƒg‚ÌŠe’iŠK‚Ég‚í‚ê‚é‹ó”’‚Ì”
-set showcmd						" ƒRƒ}ƒ“ƒh (‚Ìˆê•”) ‚ğ‰æ–Ê‚ÌÅ‰ºs‚É•\¦‚·‚é
-set tabstop=4					" ƒtƒ@ƒCƒ‹“à‚Ì <Tab> ‚ª‘Î‰‚·‚é‹ó”’‚Ì”
-set nocp						" vi‚Æ”ñŒİŠ·‚É‚·‚éB
+set nowrap						" è¡Œã®æŠ˜ã‚Šè¿”ã—ã‚’è¡Œã‚ãªã„
+set number						" è¡Œç•ªå·ã‚’è¨­å®š
+set ruler						" ã‚«ãƒ¼ã‚½ãƒ«ãŒä½•è¡Œç›®ã®ä½•åˆ—ç›®ã«ç½®ã‹ã‚Œã¦ã„ã‚‹ã‹ã‚’è¡¨ç¤º
+set shiftwidth=4				" ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã®å„æ®µéšã«ä½¿ã‚ã‚Œã‚‹ç©ºç™½ã®æ•°
+set showcmd						" ã‚³ãƒãƒ³ãƒ‰ (ã®ä¸€éƒ¨) ã‚’ç”»é¢ã®æœ€ä¸‹è¡Œã«è¡¨ç¤ºã™ã‚‹
+set tabstop=4					" ãƒ•ã‚¡ã‚¤ãƒ«å†…ã® <Tab> ãŒå¯¾å¿œã™ã‚‹ç©ºç™½ã®æ•°
+set nocp						" viã¨éäº’æ›ã«ã™ã‚‹ã€‚
 set visualbell
-set nf=""						" ƒCƒ“ƒNƒŠƒƒ“ƒg‚ÆƒfƒNƒŠƒƒ“ƒg‚Åí‚É10i”‚Æ‚µ‚Äˆµ‚¤
+set nf=""						" ã‚¤ãƒ³ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã¨ãƒ‡ã‚¯ãƒªãƒ¡ãƒ³ãƒˆã§å¸¸ã«10é€²æ•°ã¨ã—ã¦æ‰±ã†
 "set autochdir
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	ƒXƒNƒŠƒvƒg
+""	ã‚¹ã‚¯ãƒªãƒ—ãƒˆ
 ""
-:runtime ftplugin/man.vim		" :Man‚Åman
+:runtime ftplugin/man.vim		" :Manã§man
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	ƒXƒe[ƒ^ƒXs‚Ìİ’è
+""	ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹è¡Œã®è¨­å®š
 ""
-set laststatus=2				" ƒXƒe[ƒ^ƒXs‚ğí•\¦ 
-set statusline=%F%m%r%h%w\%=[FORMAT=%{&ff}]\[TYPE=%Y]\%{'[ENC='.(&fenc!=''?&fenc:&enc).']'}\[POS=%05l/%05L,%05v][%p%%]
+set laststatus=2				" ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹è¡Œã‚’å¸¸æ™‚è¡¨ç¤º 
+set statusline=%F%m%r%h%wÂ¥%=[FORMAT=%{&ff}]Â¥[TYPE=%Y]Â¥%{'[ENC='.(&fenc!=''?&fenc:&enc).']'}Â¥[POS=%05l/%05L,%05v][%p%%]
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	Align‚Ì•L‘Î‰
+""	Alignã®å¹…åºƒå¯¾å¿œ
 ""
 let g:Align_xstrlen=3
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""  ƒJƒ‰[•\¦—p‚Ìİ’è
+""  ã‚«ãƒ©ãƒ¼è¡¨ç¤ºç”¨ã®è¨­å®š
 ""
 colorscheme desert
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 ""
-""	ƒnƒCƒ‰ƒCƒgw’è
+""	ãƒã‚¤ãƒ©ã‚¤ãƒˆæŒ‡å®š
 ""
 hi	Comment ctermfg=LightCyan cterm=NONE
 hi	Search NONE
@@ -78,15 +78,15 @@ command! Big wincmd _ | wincmd |
 " for snippets
 ":let g:neosnippet#snippets_directory='$VIM/vimfiles/bundle/snipmate-snippets/snippets'
 
-" 2013/01/19 19:20ÅV‚ÌREADME‚Ì‚à‚Ì‚ğ”½‰f
+" 2013/01/19 19:20æœ€æ–°ã®READMEã®ã‚‚ã®ã‚’åæ˜ 
 " Plugin key-mappings.
 :let g:neocomplcache_enable_at_startup = 1
 imap <C-k>     <Plug>(neosnippet_expand_or_jump)
 smap <C-k>     <Plug>(neosnippet_expand_or_jump)
 
 " SuperTab like snippets behavior.
-"imap <expr><TAB> neosnippet#expandable() <Bar><bar> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "\<C-n>" : "\<TAB>"
-"smap <expr><TAB> neosnippet#expandable() <Bar><bar> neosnippet#jumpable() ? "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+"imap <expr><TAB> neosnippet#expandable() <Bar><bar> neosnippet#jumpable() ? "Â¥<Plug>(neosnippet_expand_or_jump)" : pumvisible() ? "Â¥<C-n>" : "Â¥<TAB>"
+"smap <expr><TAB> neosnippet#expandable() <Bar><bar> neosnippet#jumpable() ? "Â¥<Plug>(neosnippet_expand_or_jump)" : "Â¥<TAB>"
 
 " For snippet_complete marker.
 if has('conceal')
@@ -106,23 +106,23 @@ map <F2> :r !date /t<CR>
 map <F3> :r !time /t<CR>
 "
 
-" QuickFix‚ğ•ÏX‰Â”\‚É‚·‚éB
+" QuickFixã‚’å¤‰æ›´å¯èƒ½ã«ã™ã‚‹ã€‚
 autocmd BufWinEnter quickfix setlocal modifiable
 
 
-" ƒtƒ@ƒCƒ‹Œ`®‚ÌŒŸo‚ğ–³Œø‚É‚·‚é
+" ãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼ã®æ¤œå‡ºã‚’ç„¡åŠ¹ã«ã™ã‚‹
 filetype off
 
-" Vundle ‚ğ‰Šú‰»‚µ‚Ä
-" Vundle ©g‚à Vundle ‚ÅŠÇ—
+" Vundle ã‚’åˆæœŸåŒ–ã—ã¦
+" Vundle è‡ªèº«ã‚‚ Vundle ã§ç®¡ç†
 if executable('git') 
 	if exists("*rc")
-		set rtp+=~/vimfiles/vundle.git/
-		"set rtp+=C:\vim\vimfiles\bundle\vundle
+		set rtp+=â€¾/vimfiles/vundle.git/
+		"set rtp+=C:Â¥vimÂ¥vimfilesÂ¥bundleÂ¥vundle
 		call vundle#rc()
 		Bundle 'gmarik/vundle'
 
-		"" github ‚É‚ ‚éƒvƒ‰ƒOƒCƒ“
+		"" github ã«ã‚ã‚‹ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 		"Bundle 'Shougo/neocomplcache'
 		"Bundle 'Shougo/neosnippet'
 		"Bundle 'Shougo/vimshell'
@@ -131,7 +131,7 @@ if executable('git')
 		Bundle 'banyan/recognize_charcode.vim'
 		"Bundle 'honza/snipmate-snippets'
 		"
-		"" vim-scripts ƒvƒ‰ƒOƒCƒ“
+		"" vim-scripts ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 		Bundle 'gtags.vim'
 		Bundle 'Align.vim'
 		Bundle 'a.vim'
@@ -140,11 +140,11 @@ if executable('git')
 		Bundle 'CmdlineCompl.vim'
 
 
-		" github ‚É‚È‚¢ƒvƒ‰ƒOƒCƒ“
+		" github ã«ãªã„ãƒ—ãƒ©ã‚°ã‚¤ãƒ³
 
 	endif
 endif
-" ƒtƒ@ƒCƒ‹Œ`®ŒŸoAƒvƒ‰ƒOƒCƒ“AƒCƒ“ƒfƒ“ƒg‚ğ ON
+" ãƒ•ã‚¡ã‚¤ãƒ«å½¢å¼æ¤œå‡ºã€ãƒ—ãƒ©ã‚°ã‚¤ãƒ³ã€ã‚¤ãƒ³ãƒ‡ãƒ³ãƒˆã‚’ ON
 filetype plugin indent on 
 
 "//________________________________EOF________________________________
